@@ -4,7 +4,10 @@ pipeline{
   stages{
     stage('Run test 1'){
       steps{
-        sh './test1.sh'
+        sh """
+          chmod u+x test1.sh
+	  ./test1.sh
+	   """
       }
     }
     stage('Run test 2'){
