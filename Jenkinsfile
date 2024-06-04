@@ -6,7 +6,6 @@ pipeline {
             steps {
             	script {
 		        def hasProd = sh 'find prod.go'
-		        echo $hasProd
 		        echo hasProd
 		        echo 'Hello World!'
                 }
