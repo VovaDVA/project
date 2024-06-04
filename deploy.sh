@@ -1,1 +1,1 @@
-[DEPLOY] Deploim application to server
+echo "[DEPLOY] Deploim application to server"
