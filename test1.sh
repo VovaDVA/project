@@ -1,1 +1,1 @@
-[TEST] Test 1 passed
+echo "[TEST] Test 1 passed"
