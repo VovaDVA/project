@@ -11,6 +11,8 @@ pipeline {
 		             chmod u+x deploy.sh
 		             ./deploy.sh
 		             """
+		        } else {
+		        	echo "Nothing to deploy"
 		        }
 		        echo 'Hello World!'
                 }
