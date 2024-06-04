@@ -5,8 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
             	script {
-		        def hasProd = sh(script: 'find prod.go', returnStatus: true)
-		        echo hasProd
+		        def hasProd = sh(script: 'find -name "prod.go" | wc -l')
+		        sh 'echo "$hasProd"'
 		        echo 'Hello World!'
                 }
             }
