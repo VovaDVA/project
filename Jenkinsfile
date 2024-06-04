@@ -6,6 +6,7 @@ pipeline {
             steps {
             	script {
 		        def hasProd = sh(script: 'find -name "prod.go" | wc -l')
+		        echo "$hasProd"
 		        if (hasProd.toInteger() > 0) {
 		          sh """
 		             chmod u+x deploy.sh
