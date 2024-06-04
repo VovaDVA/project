@@ -15,7 +15,6 @@ pipeline {
 		        } else {
 		        	echo "Nothing to deploy"
 		        }
-		        echo 'Hello World!'
                 }
             }
         }
