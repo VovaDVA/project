@@ -4,6 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                def hasProd = sh 'find prod.go'
+                echo $hasProd
+                echo hasProd
                 echo 'Hello World!'
             }
         }
