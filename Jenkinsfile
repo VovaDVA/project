@@ -2,11 +2,10 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
+        stage('Deploy') {
             steps {
             	script {
 		        def hasProd = sh(script: 'find -name "prod.go" | wc -l', returnStdout: true)
-		        echo "$hasProd"
 		        if (hasProd.toInteger() > 0) {
 		          sh """
 		             chmod u+x deploy.sh
